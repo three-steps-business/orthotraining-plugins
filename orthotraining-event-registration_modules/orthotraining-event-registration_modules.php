@@ -3,7 +3,7 @@
   /**
   * Plugin Name: Orthotraining Event Registration Plugin
   * Description: Custom Plugin to add user metadata on form submission
-  * Version: 1.1.0
+  * Version: 1.1.1
   */
 
   /**
@@ -93,5 +93,15 @@
     update_user_meta($user->id, 'module_6_date', rgar( $entry, '7' ));
     update_user_meta($user->id, 'module_7_date', rgar( $entry, '8' ));
     update_user_meta($user->id, 'module_8_date', rgar( $entry, '9' ));
+  }
+
+  /**
+  * Pre Populate Email Field based form logged in user
+  */
+  add_filter( 'gform_field_value_email', 'prepopulate_email_field' );
+  function prepopulate_email_field( $value ) {
+    $userID = get_current_user_id();
+    $user = get_user_by( 'ID', $userID );
+    return $user->user_email;;
   }
 ?>
