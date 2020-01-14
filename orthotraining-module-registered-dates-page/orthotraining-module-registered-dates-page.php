@@ -18,9 +18,15 @@ function extra_user_profile_fields( $user ) { ?>
         </td>
     </tr>
     <tr>
-        <th><label for="module_2_date"><?php _e("Module 2"); ?></label></th>
+        <th><label for="module_2_1_date"><?php _e("Module 2 Part 1"); ?></label></th>
         <td>
-            <input type="text" name="module_2_date" id="module_2_date" value="<?php echo get_user_meta( $user->id, 'module_2_date', true ); ?>" class="regular-text" disabled/><br />
+            <input type="text" name="module_2_1_date" id="module_2_1_date" value="<?php echo get_user_meta( $user->id, 'module_2_1_date', true ); ?>" class="regular-text" disabled/><br />
+        </td>
+    </tr>
+    <tr>
+        <th><label for="module_2_2_date"><?php _e("Module 2 Part 2"); ?></label></th>
+        <td>
+            <input type="text" name="module_2_2_date" id="module_2_2_date" value="<?php echo get_user_meta( $user->id, 'module_2_2_date', true ); ?>" class="regular-text" disabled/><br />
         </td>
     </tr>
     <tr>
