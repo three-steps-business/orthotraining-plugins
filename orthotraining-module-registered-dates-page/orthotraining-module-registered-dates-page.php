@@ -65,5 +65,23 @@ function extra_user_profile_fields( $user ) { ?>
             <input type="text" name="module_8_date" id="module_8_date" value="<?php echo get_user_meta( $user->id, 'module_8_date', true ); ?>" class="regular-text" disabled/><br />
         </td>
     </tr>
+    <tr>
+        <th><label for="module_9_date"><?php _e("Module 9"); ?></label></th>
+        <td>
+            <input type="text" name="module_9_date" id="module_9_date" value="<?php echo get_user_meta( $user->id, 'module_9_date', true ); ?>" class="regular-text" disabled/><br />
+        </td>
+    </tr>
+    <tr>
+        <th><label for="smilefast_pro_date"><?php _e("Smilefast PRO"); ?></label></th>
+        <td>
+            <input type="text" name="smilefast_pro_date" id="smilefast_pro_date" value="<?php echo get_user_meta( $user->id, 'smilefast_pro_date', true ); ?>" class="regular-text" disabled/><br />
+        </td>
+    </tr>
+    <tr>
+        <th><label for="post_grad_test"><?php _e("Postgraduate Test"); ?></label></th>
+        <td>
+            <input type="text" name="post_grad_test" id="post_grad_test" value="<?php echo get_user_meta( $user->id, 'post_grad_test', true ); ?>" class="regular-text" disabled/><br />
+        </td>
+    </tr>
     </table>
 <?php }?>
