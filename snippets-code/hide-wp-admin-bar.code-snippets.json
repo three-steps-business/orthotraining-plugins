@@ -1,0 +1,1 @@
+{"generator":"Code Snippets v2.13.3","date_created":"2020-01-14 12:00","snippets":[{"name":"Hide WP Admin Bar","scope":"global","code":"add_action('after_setup_theme', 'remove_admin_bar');\n \nfunction remove_admin_bar() {\nif (!current_user_can('administrator') && !is_admin()) {\n  show_admin_bar(false);\n}\n}","priority":"10"}]}
