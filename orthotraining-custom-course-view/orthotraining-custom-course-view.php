@@ -2,7 +2,7 @@
   /**
   * Plugin Name: Orthotraining Custom Course View
   * Description: Custom plugin to show courses on specific registered dates
-  * Version: 1.1
+  * Version: 1.2
   */
 
 
